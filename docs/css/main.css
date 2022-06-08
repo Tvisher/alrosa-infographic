@@ -1,31 +1,39 @@
 @font-face {
-  font-family: "Ubuntu";
+  font-family: "Avenir";
   font-display: swap;
-  src: url("../fonts/Ubuntu-Bold.woff2") format("woff2"), url("../fonts/Ubuntu-Bold.woff") format("woff");
+  src: url("../fonts/Avenir-Roman.woff2") format("woff2"), url("../fonts/Avenir-Roman.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvenirNextCyr";
+  font-display: swap;
+  src: url("../fonts/AvenirNextCyr-Regular.woff2") format("woff2"), url("../fonts/AvenirNextCyr-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RobotoSlab";
+  font-display: swap;
+  src: url("../fonts/RobotoSlab-Bold.woff2") format("woff2"), url("../fonts/RobotoSlab-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Ubuntu";
+  font-family: "RobotoSlab";
   font-display: swap;
-  src: url("../fonts/Ubuntu-Medium.woff2") format("woff2"), url("../fonts/Ubuntu-Medium.woff") format("woff");
-  font-weight: 500;
+  src: url("../fonts/RobotoSlab-Black.woff2") format("woff2"), url("../fonts/RobotoSlab-Black.woff") format("woff");
+  font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Ubuntu";
+  font-family: "Snell Roundhand";
   font-display: swap;
-  src: url("../fonts/Ubuntu-Light.woff2") format("woff2"), url("../fonts/Ubuntu-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Ubuntu";
-  font-display: swap;
-  src: url("../fonts/Ubuntu-Regular.woff2") format("woff2"), url("../fonts/Ubuntu-Regular.woff") format("woff");
+  src: url("../fonts/Snell Roundhand.woff2") format("woff2"), url("../fonts/Snell Roundhand.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -243,7 +251,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fff;
-  opacity: 0;
   transition: opacity 0.3s ease;
 }
 
@@ -287,6 +294,110 @@ li {
   max-width: 1760px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.infographic {
+  background: #fdf8f1;
+  height: 100vh;
+}
+
+.infographic__head {
+  padding: 45px 65px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.infographic__title {
+  display: flex;
+  align-items: center;
+}
+
+.infographic__title .title {
+  letter-spacing: 1.41px;
+  color: #333333;
+  font-size: 39px;
+  margin-right: 27px;
+  font-family: "RobotoSlab";
+  font-weight: 900;
+}
+
+.infographic__title .title-year {
+  color: #b19673;
+  font-size: 58px;
+  font-family: "Snell Roundhand";
+}
+
+.infographic__secects {
+  display: flex;
+  align-items: center;
+  color: #020e3e;
+  gap: 30px;
+}
+
+.infographic__secects select {
+  padding: 14px 25px;
+  border: 1px solid #020e3e;
+  background-color: #fff;
+  font-family: "RobotoSlab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  width: 211px;
+}
+
+.infographic__skeleton {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding-right: 72px;
+  padding-left: 210px;
+}
+
+.skeleton__item {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.skeleton__item:nth-of-type(1) {
+  flex: 0 0 15%;
+}
+
+.skeleton__item:nth-of-type(2) {
+  flex: 0 0 15%;
+}
+
+.skeleton__item .item__img {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.skeleton__item .item__img img {
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.skeleton__item .item__name {
+  margin-bottom: 22px;
+  font-size: 18px;
+  color: #333333;
+  font-family: "Snell Roundhand";
+  font-style: italic;
+  font-weight: 700;
+}
+
+.skeleton__item .item__line {
+  width: 1px;
+  height: 60vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 28px;
 }
 
 @media screen and (max-width: 768px) {
