@@ -1,0 +1,32 @@
+$index: calc(1vw + 1vh);
+
+// Size
+$mainFontSize: 18px;
+$mainFontWeight: 400;
+$mainLineHeight: 140%;
+
+$desktopWidth: 1760px;
+$smDesktopWidth: 980px;
+$tableWidth: 768px;
+$phoneWidth: 480px;
+$smPhoneWidth: 380px;
+
+// Main color
+$brand-black: #343a45;
+$brand-primary: #ddcfc6;
+$brand-gray: #59677e;
+$brand-white: #ffffff;
+
+// Font
+
+@mixin pruning($c) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: $c;
+  -webkit-box-orient: vertical;
+  line-clamp: $c;
+  box-orient: vertical;
+}
