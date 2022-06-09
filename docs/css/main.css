@@ -1,13 +1,29 @@
 @font-face {
   font-family: "Avenir";
   font-display: swap;
+  src: url("../fonts/Avenir-Heavy.woff2") format("woff2"), url("../fonts/Avenir-Heavy.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir";
+  font-display: swap;
+  src: url("../fonts/AvenirNextCyr-Bold.woff2") format("woff2"), url("../fonts/AvenirNextCyr-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir";
+  font-display: swap;
   src: url("../fonts/Avenir-Roman.woff2") format("woff2"), url("../fonts/Avenir-Roman.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "AvenirNextCyr";
+  font-family: "Avenir";
   font-display: swap;
   src: url("../fonts/AvenirNextCyr-Regular.woff2") format("woff2"), url("../fonts/AvenirNextCyr-Regular.woff") format("woff");
   font-weight: 400;
@@ -17,16 +33,16 @@
 @font-face {
   font-family: "RobotoSlab";
   font-display: swap;
-  src: url("../fonts/RobotoSlab-Bold.woff2") format("woff2"), url("../fonts/RobotoSlab-Bold.woff") format("woff");
-  font-weight: 700;
+  src: url("../fonts/RobotoSlab-Black.woff2") format("woff2"), url("../fonts/RobotoSlab-Black.woff") format("woff");
+  font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: "RobotoSlab";
   font-display: swap;
-  src: url("../fonts/RobotoSlab-Black.woff2") format("woff2"), url("../fonts/RobotoSlab-Black.woff") format("woff");
-  font-weight: 900;
+  src: url("../fonts/RobotoSlab-Bold.woff2") format("woff2"), url("../fonts/RobotoSlab-Bold.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -336,6 +352,7 @@ li {
 }
 
 .infographic__secects select {
+  cursor: pointer;
   padding: 14px 25px;
   border: 1px solid #020e3e;
   background-color: #fff;
@@ -344,6 +361,13 @@ li {
   font-weight: 700;
   font-size: 20px;
   width: 211px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='22' height='14' viewBox='0 0 22 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.2574 9.2264L2.61229 0.581299L0.514648 2.67894L11.2507 13.415L11.2536 13.412L11.2603 13.4187L22 2.67908L19.9024 0.581437L11.2574 9.2264Z' fill='%23020E3E'/%3e%3c/svg%3e ");
+  background-repeat: no-repeat, repeat;
+  background-position: right 1em top 50%, 0 0;
+  background-size: 1em auto, 100%;
 }
 
 .infographic__skeleton {
@@ -395,9 +419,84 @@ li {
 
 .skeleton__item .item__line {
   width: 1px;
-  height: 60vh;
+  height: 45vh;
   background-color: rgba(0, 0, 0, 0.4);
   margin-bottom: 28px;
+}
+
+.skeleton__item .item__data {
+  margin-bottom: 5px;
+  color: #020e3e;
+  font-size: 16px;
+  font-family: "Avenir";
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.infographic__footer {
+  padding: 33px 65px 43px;
+}
+
+.infographic__legend {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.infographic__legend .legend__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: calc((1vw + 1vh) * 0.5);
+}
+
+.infographic__legend .item-ico {
+  width: 27px;
+  height: 27px;
+  overflow: hidden;
+}
+
+.infographic__legend .item-ico svg {
+  object-fit: contain;
+}
+
+.infographic__legend .item-text {
+  margin-right: calc((1vw + 1vh) * 0.5);
+  font-family: "Avenir";
+  font-weight: 400;
+  font-size: 18px;
+  color: #020e3e;
+}
+
+.infographic__footer-data {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.infographic__footer-data .footer-data__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 35px;
+}
+
+.infographic__footer-data .item-param {
+  font-family: "Avenir";
+  font-weight: 400;
+  font-size: 18px;
+  color: #020e3e;
+  margin-right: 15px;
+}
+
+.infographic__footer-data .item-param-data {
+  font-family: "Avenir";
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #b19673;
 }
 
 @media screen and (max-width: 768px) {
