@@ -231,7 +231,7 @@ li {
 .infographic__footer {
   margin-top: auto;
   // padding: calc($index * 1.1) calc($index * 2.2) calc($index * 0.33);
-  padding: calc($index * 1.1) calc($index * 2.2) calc($index * 0.7);
+  padding: calc($index * 1) calc($index * 2.2) calc($index * 0.7);
   position: relative;
   &::before {
     content: "";
@@ -966,7 +966,7 @@ li {
       opacity: 1;
       transform: translate(-50%, -50%) scale(1);
     }
-    [data-numeric-type="total-carat"] {
+    [data-numeric-info="2021"][data-numeric-type="total-carat"] {
       display: block;
     }
   }

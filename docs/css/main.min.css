@@ -457,7 +457,7 @@ li {
 
 .infographic__footer {
   margin-top: auto;
-  padding: calc((1vw + 1vh) * 1.1) calc((1vw + 1vh) * 2.2) calc((1vw + 1vh) * 0.7);
+  padding: calc((1vw + 1vh) * 1) calc((1vw + 1vh) * 2.2) calc((1vw + 1vh) * 0.7);
   position: relative;
 }
 
@@ -1147,7 +1147,7 @@ li {
   transform: translate(-50%, -50%) scale(1);
 }
 
-[data-selected-year="2021"][data-selected-type=total-carat] [data-numeric-type=total-carat] {
+[data-selected-year="2021"][data-selected-type=total-carat] [data-numeric-info="2021"][data-numeric-type=total-carat] {
   display: block;
 }
 
