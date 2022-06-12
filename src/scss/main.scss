@@ -289,7 +289,7 @@ li {
   align-items: center;
   justify-content: flex-start;
   .footer-data__item {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: flex-start;
     margin-right: calc($index * 1.15);
@@ -960,6 +960,9 @@ li {
     [data-numeric-info="2021"] {
       display: block;
     }
+    [data-total-info="2021"] {
+      display: flex;
+    }
   }
   &[data-selected-type="total-carat"] {
     .fill-sphere[data-sphere="2021"] {
@@ -968,6 +971,9 @@ li {
     }
     [data-numeric-info="2021"][data-numeric-type="total-carat"] {
       display: block;
+    }
+    [data-total-info="2021"][data-total-type="total-carat"] {
+      display: flex;
     }
   }
 
@@ -979,6 +985,9 @@ li {
     [data-numeric-info="2021"][data-numeric-type="total-dollar"] {
       display: block;
     }
+    [data-total-info="2021"][data-total-type="total-dollar"] {
+      display: flex;
+    }
   }
 
   &[data-selected-type="dollar-per-carat"] {
@@ -988,6 +997,9 @@ li {
     }
     [data-numeric-info="2021"][data-numeric-type="dollar-per-carat"] {
       display: block;
+    }
+    [data-total-info="2021"][data-total-type="dollar-per-carat"] {
+      display: flex;
     }
   }
 }
@@ -1003,6 +1015,9 @@ li {
     [data-numeric-info="2020"] {
       display: block;
     }
+    [data-total-info="2020"] {
+      display: flex;
+    }
   }
   &[data-selected-type="total-carat"] {
     .fill-sphere[data-sphere="2020"] {
@@ -1011,6 +1026,9 @@ li {
     }
     [data-numeric-info="2020"][data-numeric-type="total-carat"] {
       display: block;
+    }
+    [data-total-info="2020"][data-total-type="total-carat"] {
+      display: flex;
     }
   }
 
@@ -1022,6 +1040,9 @@ li {
     [data-numeric-info="2020"][data-numeric-type="total-dollar"] {
       display: block;
     }
+    [data-total-info="2020"][data-total-type="total-dollar"] {
+      display: flex;
+    }
   }
 
   &[data-selected-type="dollar-per-carat"] {
@@ -1031,6 +1052,9 @@ li {
     }
     [data-numeric-info="2020"][data-numeric-type="dollar-per-carat"] {
       display: block;
+    }
+    [data-total-info="2020"][data-total-type="dollar-per-carat"] {
+      display: flex;
     }
   }
 
@@ -1050,6 +1074,9 @@ li {
     [data-numeric-info="2019"] {
       display: block;
     }
+    [data-total-info="2019"] {
+      display: flex;
+    }
   }
   &[data-selected-type="total-carat"] {
     .fill-sphere[data-sphere="2019"] {
@@ -1058,6 +1085,9 @@ li {
     }
     [data-numeric-info="2019"][data-numeric-type="total-carat"] {
       display: block;
+    }
+    [data-total-info="2019"][data-total-type="total-carat"] {
+      display: flex;
     }
   }
 
@@ -1069,6 +1099,9 @@ li {
     [data-numeric-info="2019"][data-numeric-type="total-dollar"] {
       display: block;
     }
+    [data-total-info="2019"][data-total-type="total-dollar"] {
+      display: flex;
+    }
   }
 
   &[data-selected-type="dollar-per-carat"] {
@@ -1078,6 +1111,9 @@ li {
     }
     [data-numeric-info="2019"][data-numeric-type="dollar-per-carat"] {
       display: block;
+    }
+    [data-total-info="2019"][data-total-type="dollar-per-carat"] {
+      display: flex;
     }
   }
   [data-year="2019"] {
