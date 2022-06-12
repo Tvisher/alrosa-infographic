@@ -15,7 +15,7 @@
     <header> </header>
 
     <main>
-        <section class="infographic" data-selected-year="2021">
+        <section class="infographic" id="infographic-data" data-selected-year="2021" data-selected-type="all">
             <div class="infographic__head">
                 <div class="infographic__title">
                     <h1 class="title">ПРОДАЖИ АУКЦИОНОВ</h1>
@@ -32,10 +32,10 @@
                         <option value="2019">2019</option>
                     </select>
                     <select name="type" id="type-select">
-                        <option value="" selected>Все</option>
-                        <option value="">Итого карат</option>
-                        <option value="">Итого $</option>
-                        <option value="">$ за карат </option>
+                        <option value="all" selected>Все</option>
+                        <option value="total-carat">Итого карат</option>
+                        <option value="total-dollar">Итого $</option>
+                        <option value="dollar-per-carat">$ за карат </option>
                     </select>
                 </div>
             </div>
@@ -59,9 +59,17 @@
                             <div class="border-sphere" data-sphere="2019"></div>
                             <div class="dashed-sphere" data-sphere="2019"></div>
                         </div>
-                        <span class="item__data">$81,71 млн</span>
-                        <span class="item__data">1503,68 карат</span>
-                        <span class="item__data">$54,3 тыс./к </span>
+                        <span class="item__data" data-numeric-info="2019" data-numeric-type="total-dollar">$81,71 млн</span>
+                        <span class="item__data" data-numeric-info="2019" data-numeric-type="total-carat">1503,68 карат</span>
+                        <span class="item__data" data-numeric-info="2019" data-numeric-type="dollar-per-carat">$54,3 тыс./к</span>
+
+                        <span class="item__data" data-numeric-info="2020" data-numeric-type="total-dollar">$57,29 млн</span>
+                        <span class="item__data" data-numeric-info="2020" data-numeric-type="total-carat">1150,40 карат</span>
+                        <span class="item__data" data-numeric-info="2020" data-numeric-type="dollar-per-carat">$49,8 тыс./к</span>
+
+                        <span class="item__data" data-numeric-info="2021" data-numeric-type="total-dollar">$57,29 млн</span>
+                        <span class="item__data" data-numeric-info="2021" data-numeric-type="total-carat">1150,40 карат</span>
+                        <span class="item__data" data-numeric-info="2021" data-numeric-type="dollar-per-carat">$49,8 тыс./к</span>
                     </div>
                     <div class="skeleton__item yellow">
                         <div class="item__img">
@@ -81,9 +89,18 @@
                             <div class="border-sphere" data-sphere="2019"></div>
                             <div class="dashed-sphere" data-sphere="2019"></div>
                         </div>
-                        <span class="item__data">$81,71 млн</span>
-                        <span class="item__data">1503,68 карат</span>
-                        <span class="item__data">$54,3 тыс./к </span>
+                        <span class="item__data" data-numeric-info="2019" data-numeric-type="total-dollar">$34,58 млн</span>
+                        <span class="item__data" data-numeric-info="2019" data-numeric-type="total-carat">1085,56 карат</span>
+                        <span class="item__data" data-numeric-info="2019" data-numeric-type="dollar-per-carat">$31,9 тыс./к</span>
+
+                        <span class="item__data" data-numeric-info="2020" data-numeric-type="total-dollar">$21,29 млн</span>
+                        <span class="item__data" data-numeric-info="2020" data-numeric-type="total-carat">791,77 карат</span>
+                        <span class="item__data" data-numeric-info="2020" data-numeric-type="dollar-per-carat">$26,9 тыс./к</span>
+
+
+                        <span class="item__data" data-numeric-info="2021" data-numeric-type="total-dollar">$52,53 млн </span>
+                        <span class="item__data" data-numeric-info="2021" data-numeric-type="total-carat">1267,5 карат</span>
+                        <span class="item__data" data-numeric-info="2021" data-numeric-type="dollar-per-carat">$41,4 тыс./к</span>
                     </div>
                     <div class="skeleton__item pink">
                         <div class="item__img">
@@ -95,7 +112,6 @@
                             <div class="border-sphere" data-sphere="2021"></div>
                             <div class="dashed-sphere" data-sphere="2021"></div>
 
-
                             <div class="fill-sphere" data-sphere="2020"></div>
                             <div class="border-sphere" data-sphere="2020"></div>
                             <div class="dashed-sphere" data-sphere="2020"></div>
@@ -104,9 +120,17 @@
                             <div class="border-sphere" data-sphere="2019"></div>
                             <div class="dashed-sphere" data-sphere="2019"></div>
                         </div>
-                        <span class="item__data">$81,71 млн</span>
-                        <span class="item__data">1503,68 карат</span>
-                        <span class="item__data">$54,3 тыс./к </span>
+                        <span class="item__data" data-numeric-info="2019" data-numeric-type="total-dollar">$44,68 млн</span>
+                        <span class="item__data" data-numeric-info="2019" data-numeric-type="total-carat">148,69 карат</span>
+                        <span class="item__data" data-numeric-info="2019" data-numeric-type="dollar-per-carat">$300,5 тыс./к</span>
+
+                        <span class="item__data" data-numeric-info="2020" data-numeric-type="total-dollar">$54,25 млн</span>
+                        <span class="item__data" data-numeric-info="2020" data-numeric-type="total-carat">111,51 карат</span>
+                        <span class="item__data" data-numeric-info="2020" data-numeric-type="dollar-per-carat">$486,5 тыс./к</span>
+
+                        <span class="item__data" data-numeric-info="2021" data-numeric-type="total-dollar">$79,17 млн</span>
+                        <span class="item__data" data-numeric-info="2021" data-numeric-type="total-carat">187,76 карат</span>
+                        <span class="item__data" data-numeric-info="2021" data-numeric-type="dollar-per-carat">$421,6 тыс./к</span>
                     </div>
                     <div class="skeleton__item brown">
                         <div class="item__img">
@@ -122,9 +146,18 @@
                             <div class="border-sphere" data-sphere="2019"></div>
                             <div class="dashed-sphere" data-sphere="2019"></div>
                         </div>
-                        <span class="item__data">$81,71 млн</span>
-                        <span class="item__data">1503,68 карат</span>
-                        <span class="item__data">$54,3 тыс./к </span>
+
+                        <span class="item__data" data-numeric-info="2019" data-numeric-type="total-dollar">$1,17 млн</span>
+                        <span class="item__data" data-numeric-info="2019" data-numeric-type="total-carat">64,13 карат</span>
+                        <span class="item__data" data-numeric-info="2019" data-numeric-type="dollar-per-carat">$18,3 тыс./к</span>
+
+                        <span class="item__data" data-numeric-info="2020" data-numeric-type="total-dollar">$0 млн</span>
+                        <span class="item__data" data-numeric-info="2020" data-numeric-type="total-carat">0 карат</span>
+                        <span class="item__data" data-numeric-info="2020" data-numeric-type="dollar-per-carat">$0 тыс./к</span>
+
+                        <span class="item__data" data-numeric-info="2021" data-numeric-type="total-dollar">$4,18 млн</span>
+                        <span class="item__data" data-numeric-info="2021" data-numeric-type="total-carat">111,8 карат</span>
+                        <span class="item__data" data-numeric-info="2021" data-numeric-type="dollar-per-carat">$37,4 тыс./к </span>
                     </div>
                     <div class="skeleton__item blue">
                         <div class="item__img">
@@ -144,9 +177,18 @@
                             <div class="border-sphere" data-sphere="2019"></div>
                             <div class="dashed-sphere" data-sphere="2019"></div>
                         </div>
-                        <span class="item__data">$81,71 млн</span>
-                        <span class="item__data">1503,68 карат</span>
-                        <span class="item__data">$54,3 тыс./к </span>
+
+                        <span class="item__data" data-numeric-info="2019" data-numeric-type="total-dollar">$37,49 млн</span>
+                        <span class="item__data" data-numeric-info="2019" data-numeric-type="total-carat">53,4 карат</span>
+                        <span class="item__data" data-numeric-info="2019" data-numeric-type="dollar-per-carat">$702,0 тыс./к</span>
+
+                        <span class="item__data" data-numeric-info="2020" data-numeric-type="total-dollar">$54,42 млн </span>
+                        <span class="item__data" data-numeric-info="2020" data-numeric-type="total-carat">56,38 карат</span>
+                        <span class="item__data" data-numeric-info="2020" data-numeric-type="dollar-per-carat">$965,3 тыс./к </span>
+
+                        <span class="item__data" data-numeric-info="2021" data-numeric-type="total-dollar">$37,60 млн </span>
+                        <span class="item__data" data-numeric-info="2021" data-numeric-type="total-carat">46,63 карат</span>
+                        <span class="item__data" data-numeric-info="2021" data-numeric-type="dollar-per-carat">$806,4 тыс./к</span>
                     </div>
                     <div class="skeleton__item orange">
                         <div class="item__img">
@@ -166,9 +208,18 @@
                             <div class="border-sphere" data-sphere="2019"></div>
                             <div class="dashed-sphere" data-sphere="2019"></div>
                         </div>
-                        <span class="item__data">$81,71 млн</span>
-                        <span class="item__data">1503,68 карат</span>
-                        <span class="item__data">$54,3 тыс./к </span>
+
+                        <span class="item__data" data-numeric-info="2019" data-numeric-type="total-dollar">$2,93 млн</span>
+                        <span class="item__data" data-numeric-info="2019" data-numeric-type="total-carat">27,46 карат</span>
+                        <span class="item__data" data-numeric-info="2019" data-numeric-type="dollar-per-carat">$106,7 тыс./к </span>
+
+                        <span class="item__data" data-numeric-info="2020" data-numeric-type="total-dollar">$2,17 млн</span>
+                        <span class="item__data" data-numeric-info="2020" data-numeric-type="total-carat">7,12 карат</span>
+                        <span class="item__data" data-numeric-info="2020" data-numeric-type="dollar-per-carat">$305,3 тыс./к</span>
+
+                        <span class="item__data" data-numeric-info="2021" data-numeric-type="total-dollar">$3,34 млн</span>
+                        <span class="item__data" data-numeric-info="2021" data-numeric-type="total-carat">104,58 карат</span>
+                        <span class="item__data" data-numeric-info="2021" data-numeric-type="dollar-per-carat">$31,9 тыс./к</span>
                     </div>
                     <div class="skeleton__item gray">
                         <div class="item__img">
@@ -184,9 +235,17 @@
                             <div class="border-sphere" data-sphere="2019"></div>
                             <div class="dashed-sphere" data-sphere="2019"></div>
                         </div>
-                        <span class="item__data">$81,71 млн</span>
-                        <span class="item__data">1503,68 карат</span>
-                        <span class="item__data">$54,3 тыс./к </span>
+                        <span class="item__data" data-numeric-info="2019" data-numeric-type="total-dollar">$0,29 млн</span>
+                        <span class="item__data" data-numeric-info="2019" data-numeric-type="total-carat">13,04 карат</span>
+                        <span class="item__data" data-numeric-info="2019" data-numeric-type="dollar-per-carat">$22,6 тыс./к</span>
+
+                        <span class="item__data" data-numeric-info="2020" data-numeric-type="total-dollar">$0 млн</span>
+                        <span class="item__data" data-numeric-info="2020" data-numeric-type="total-carat">0 карат</span>
+                        <span class="item__data" data-numeric-info="2020" data-numeric-type="dollar-per-carat">$0 тыс./к</span>
+
+                        <span class="item__data" data-numeric-info="2021" data-numeric-type="total-dollar">$0,003 млн</span>
+                        <span class="item__data" data-numeric-info="2021" data-numeric-type="total-carat">1,6 карат</span>
+                        <span class="item__data" data-numeric-info="2021" data-numeric-type="dollar-per-carat">$1,9 тыс./к</span>
                     </div>
                     <div class="skeleton__item purple">
                         <div class="item__img">
@@ -207,9 +266,17 @@
                             <div class="border-sphere" data-sphere="2019"></div>
                             <div class="dashed-sphere" data-sphere="2019"></div>
                         </div>
-                        <span class="item__data">$81,71 млн</span>
-                        <span class="item__data">1503,68 карат</span>
-                        <span class="item__data">$54,3 тыс./к </span>
+                        <span class="item__data" data-numeric-info="2019" data-numeric-type="total-dollar">$1,45 млн </span>
+                        <span class="item__data" data-numeric-info="2019" data-numeric-type="total-carat">7,59 карат</span>
+                        <span class="item__data" data-numeric-info="2019" data-numeric-type="dollar-per-carat">$190,8 тыс./к </span>
+
+                        <span class="item__data" data-numeric-info="2020" data-numeric-type="total-dollar">$0,39 млн</span>
+                        <span class="item__data" data-numeric-info="2020" data-numeric-type="total-carat">2,01 карат</span>
+                        <span class="item__data" data-numeric-info="2020" data-numeric-type="dollar-per-carat">$193,9 тыс./к</span>
+
+                        <span class="item__data" data-numeric-info="2021" data-numeric-type="total-dollar"> $0,068 млн</span>
+                        <span class="item__data" data-numeric-info="2021" data-numeric-type="total-carat">1,01 карат</span>
+                        <span class="item__data" data-numeric-info="2021" data-numeric-type="dollar-per-carat">$67,6 тыс./к</span>
                     </div>
                     <div class="skeleton__item green">
                         <div class="item__img">
@@ -229,9 +296,17 @@
                             <div class="border-sphere" data-sphere="2019"></div>
                             <div class="dashed-sphere" data-sphere="2019"></div>
                         </div>
-                        <span class="item__data">$81,71 млн</span>
-                        <span class="item__data">1503,68 карат</span>
-                        <span class="item__data">$54,3 тыс./к </span>
+                        <span class="item__data" data-numeric-info="2019" data-numeric-type="total-dollar">$0,96 млн</span>
+                        <span class="item__data" data-numeric-info="2019" data-numeric-type="total-carat">5,34 карат</span>
+                        <span class="item__data" data-numeric-info="2019" data-numeric-type="dollar-per-carat">$180,7 тыс./к</span>
+
+                        <span class="item__data" data-numeric-info="2020" data-numeric-type="total-dollar">$0,26 млн</span>
+                        <span class="item__data" data-numeric-info="2020" data-numeric-type="total-carat"> 6,01 карат</span>
+                        <span class="item__data" data-numeric-info="2020" data-numeric-type="dollar-per-carat">$43,0 тыс./к</span>
+
+                        <span class="item__data" data-numeric-info="2021" data-numeric-type="total-dollar">$4,91 млн</span>
+                        <span class="item__data" data-numeric-info="2021" data-numeric-type="total-carat">33,49 карат</span>
+                        <span class="item__data" data-numeric-info="2021" data-numeric-type="dollar-per-carat">$146,5 тыс./к </span>
                     </div>
                     <div class="skeleton__item red">
                         <div class="item__img">
@@ -247,9 +322,17 @@
                             <div class="border-sphere" data-sphere="2019"></div>
                             <div class="dashed-sphere" data-sphere="2019"></div>
                         </div>
-                        <span class="item__data">$81,71 млн</span>
-                        <span class="item__data">1503,68 карат</span>
-                        <span class="item__data">$54,3 тыс./к </span>
+                        <span class="item__data" data-numeric-info="2019" data-numeric-type="total-dollar">$0,71 млн</span>
+                        <span class="item__data" data-numeric-info="2019" data-numeric-type="total-carat">0,59 карат</span>
+                        <span class="item__data" data-numeric-info="2019" data-numeric-type="dollar-per-carat">$1 205,1 тыс./к</span>
+
+                        <span class="item__data" data-numeric-info="2020" data-numeric-type="total-dollar">$5,88 млн</span>
+                        <span class="item__data" data-numeric-info="2020" data-numeric-type="total-carat">2,76 карат</span>
+                        <span class="item__data" data-numeric-info="2020" data-numeric-type="dollar-per-carat">$2 128,9 тыс./к</span>
+
+                        <span class="item__data" data-numeric-info="2021" data-numeric-type="total-dollar">$0 млн</span>
+                        <span class="item__data" data-numeric-info="2021" data-numeric-type="total-carat">0 карат</span>
+                        <span class="item__data" data-numeric-info="2021" data-numeric-type="dollar-per-carat">$0 тыс./к</span>
                     </div>
                 </div>
             </div>
@@ -311,6 +394,16 @@
     window.addEventListener('load', (e) => {
         document.body.style.opacity = 1;
     });
+    const infographicData = document.querySelector('#infographic-data');
+
+    document.querySelector('#type-select').addEventListener('change', (e) => {
+        infographicData.setAttribute('data-selected-type', e.target.value)
+    });
+
+    document.querySelector('#year-select').addEventListener('change', (e) => {
+        infographicData.setAttribute('data-selected-year', e.target.value)
+    });
+
 </script>
 <script src="./js/app.min.js"></script>
 
