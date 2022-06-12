@@ -551,7 +551,8 @@ li {
   position: absolute;
   left: 0;
   top: 50%;
-  transform: translate(-50%, -50%) scale(0.3);
+  transform: translate3d(-50%, -50%, 0) scale(0.3);
+  will-change: transform;
 }
 
 .skeleton__item.colorless .fill-sphere[data-sphere="2021"] {
@@ -1135,7 +1136,7 @@ li {
 [data-selected-year="2021"][data-selected-type=all] .border-sphere[data-sphere="2021"],
 [data-selected-year="2021"][data-selected-type=all] .dashed-sphere[data-sphere="2021"] {
   opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate3d(-50%, -50%, 0) scale(1);
 }
 
 [data-selected-year="2021"][data-selected-type=all] [data-numeric-info="2021"] {
@@ -1148,7 +1149,7 @@ li {
 
 [data-selected-year="2021"][data-selected-type=total-carat] .fill-sphere[data-sphere="2021"] {
   opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate3d(-50%, -50%, 0) scale(1);
 }
 
 [data-selected-year="2021"][data-selected-type=total-carat] [data-numeric-info="2021"][data-numeric-type=total-carat] {
@@ -1161,7 +1162,7 @@ li {
 
 [data-selected-year="2021"][data-selected-type=total-dollar] .border-sphere[data-sphere="2021"] {
   opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate3d(-50%, -50%, 0) scale(1);
 }
 
 [data-selected-year="2021"][data-selected-type=total-dollar] [data-numeric-info="2021"][data-numeric-type=total-dollar] {
@@ -1174,7 +1175,7 @@ li {
 
 [data-selected-year="2021"][data-selected-type=dollar-per-carat] .dashed-sphere[data-sphere="2021"] {
   opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate3d(-50%, -50%, 0) scale(1);
 }
 
 [data-selected-year="2021"][data-selected-type=dollar-per-carat] [data-numeric-info="2021"][data-numeric-type=dollar-per-carat] {
@@ -1189,7 +1190,7 @@ li {
 [data-selected-year="2020"][data-selected-type=all] .border-sphere[data-sphere="2020"],
 [data-selected-year="2020"][data-selected-type=all] .dashed-sphere[data-sphere="2020"] {
   opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate3d(-50%, -50%, 0) scale(1);
 }
 
 [data-selected-year="2020"][data-selected-type=all] [data-numeric-info="2020"] {
@@ -1202,7 +1203,7 @@ li {
 
 [data-selected-year="2020"][data-selected-type=total-carat] .fill-sphere[data-sphere="2020"] {
   opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate3d(-50%, -50%, 0) scale(1);
 }
 
 [data-selected-year="2020"][data-selected-type=total-carat] [data-numeric-info="2020"][data-numeric-type=total-carat] {
@@ -1215,7 +1216,7 @@ li {
 
 [data-selected-year="2020"][data-selected-type=total-dollar] .border-sphere[data-sphere="2020"] {
   opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate3d(-50%, -50%, 0) scale(1);
 }
 
 [data-selected-year="2020"][data-selected-type=total-dollar] [data-numeric-info="2020"][data-numeric-type=total-dollar] {
@@ -1228,7 +1229,7 @@ li {
 
 [data-selected-year="2020"][data-selected-type=dollar-per-carat] .dashed-sphere[data-sphere="2020"] {
   opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate3d(-50%, -50%, 0) scale(1);
 }
 
 [data-selected-year="2020"][data-selected-type=dollar-per-carat] [data-numeric-info="2020"][data-numeric-type=dollar-per-carat] {
@@ -1247,7 +1248,7 @@ li {
 [data-selected-year="2019"][data-selected-type=all] .border-sphere[data-sphere="2019"],
 [data-selected-year="2019"][data-selected-type=all] .dashed-sphere[data-sphere="2019"] {
   opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate3d(-50%, -50%, 0) scale(1);
 }
 
 [data-selected-year="2019"][data-selected-type=all] [data-numeric-info="2019"] {
@@ -1260,7 +1261,7 @@ li {
 
 [data-selected-year="2019"][data-selected-type=total-carat] .fill-sphere[data-sphere="2019"] {
   opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate3d(-50%, -50%, 0) scale(1);
 }
 
 [data-selected-year="2019"][data-selected-type=total-carat] [data-numeric-info="2019"][data-numeric-type=total-carat] {
@@ -1273,7 +1274,7 @@ li {
 
 [data-selected-year="2019"][data-selected-type=total-dollar] .border-sphere[data-sphere="2019"] {
   opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate3d(-50%, -50%, 0) scale(1);
 }
 
 [data-selected-year="2019"][data-selected-type=total-dollar] [data-numeric-info="2019"][data-numeric-type=total-dollar] {
@@ -1286,7 +1287,7 @@ li {
 
 [data-selected-year="2019"][data-selected-type=dollar-per-carat] .dashed-sphere[data-sphere="2019"] {
   opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate3d(-50%, -50%, 0) scale(1);
 }
 
 [data-selected-year="2019"][data-selected-type=dollar-per-carat] [data-numeric-info="2019"][data-numeric-type=dollar-per-carat] {
