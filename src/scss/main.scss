@@ -148,7 +148,6 @@ li {
   display: flex;
   align-items: center;
   color: #020e3e;
-  // gap: 30px;
   gap: $index;
   select {
     overflow: hidden;
@@ -1137,8 +1136,8 @@ li {
   position: absolute;
   left: 0;
   top: 0;
-  bottom: 0;
   right: 0;
+  height: 100%;
   z-index: 100;
   display: flex;
   align-items: center;
