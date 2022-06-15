@@ -3,15 +3,7 @@
   font-display: swap;
   src: url("../fonts/Avenir-Heavy.woff2") format("woff2"),
     url("../fonts/Avenir-Heavy.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Avenir";
-  font-display: swap;
-  src: url("../fonts/AvenirNextCyr-Bold.woff2") format("woff2"),
-    url("../fonts/AvenirNextCyr-Bold.woff") format("woff");
-  font-weight: 700;
+  font-weight: 900;
   font-style: normal;
 }
 @font-face {
@@ -25,8 +17,40 @@
 @font-face {
   font-family: "Avenir";
   font-display: swap;
+  src: url("../fonts/AvenirNextCyr-Bold.woff2") format("woff2"),
+    url("../fonts/AvenirNextCyr-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir";
+  font-display: swap;
   src: url("../fonts/AvenirNextCyr-Regular.woff2") format("woff2"),
     url("../fonts/AvenirNextCyr-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Golos";
+  font-display: swap;
+  src: url("../fonts/Golos-Text_Black.woff2") format("woff2"),
+    url("../fonts/Golos-Text_Black.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Radley";
+  font-display: swap;
+  src: url("../fonts/Radley-Italic.woff2") format("woff2"),
+    url("../fonts/Radley-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Radley";
+  font-display: swap;
+  src: url("../fonts/Radley-Regular.woff2") format("woff2"),
+    url("../fonts/Radley-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
